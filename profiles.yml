@@ -1,0 +1,12 @@
+my_profile:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: TUNOYFN-QVA43709
+      user: GUSTAVOBRIETZIG
+      password: '@Senha12345678'
+      role: DBT_ROLE
+      database: ITAX
+      schema: GOLD
+      warehouse: COMPUTE_WH
