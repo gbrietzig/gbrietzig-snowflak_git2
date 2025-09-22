@@ -1,8 +1,13 @@
+name: 'meu_projeto'
+version: '1.0.0'
+config-version: 2
+
+profile: 'default'
+
+model-paths: ["models"]
+
 models:
-  my_project:
-    silver:
-      +schema: SILVER
-      +materialized: view
+  meu_projeto:
     gold:
       +schema: GOLD
       +materialized: table
