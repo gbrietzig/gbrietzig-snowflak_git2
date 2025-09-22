@@ -1,13 +1,24 @@
-name: 'meu_projeto'
-version: '1.0.0'
+name: my_dbt_project
+version: 1.0
 config-version: 2
 
-profile: 'default'
+# Schema padrão para materialização
+profile: default
 
-model-paths: ["models"]
+# Diretórios do projeto
+source-paths: ["models"]
+analysis-paths: ["analysis"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+data-paths: ["data"]
+
+# Target padrão
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_modules"
 
 models:
-  meu_projeto:
+  my_dbt_project:
     gold:
-      +schema: GOLD
-      +materialized: table
+      materialized: incremental  # Define materialização incremental para todos os modelos na pasta gold

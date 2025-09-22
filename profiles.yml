@@ -1,4 +1,4 @@
-my_profile:
+default:
   target: dev
   outputs:
     dev:
@@ -6,7 +6,9 @@ my_profile:
       account: TUNOYFN-QVA43709
       user: GUSTAVOBRIETZIG
       password: '@Senha12345678'
-      role: DBT_ROLE
+      role: ACCOUNTADMIN          # role da sessão
       database: ITAX
       schema: GOLD
       warehouse: COMPUTE_WH
+      threads: 1                  # número de threads para execução paralela
+      client_session_keep_alive: false
