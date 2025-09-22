@@ -1,0 +1,8 @@
+models:
+  my_project:
+    silver:
+      +schema: SILVER
+      +materialized: view
+    gold:
+      +schema: GOLD
+      +materialized: table
