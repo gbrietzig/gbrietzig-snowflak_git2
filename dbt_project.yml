@@ -18,7 +18,7 @@ clean-targets:
   - "target"
   - "dbt_modules"
 
-models:
-  my_dbt_project:
-    gold:
-      materialized: incremental  # Define materialização incremental para todos os modelos na pasta gold
+# models:
+#   my_dbt_project:
+#     gold:
+#       materialized: incremental  # Define materialização incremental para todos os modelos na pasta gold

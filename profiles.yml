@@ -8,7 +8,7 @@ default:
       password: '@Senha12345678'
       role: ACCOUNTADMIN          # role da sessão
       database: ITAX
-      schema: GOLD
+      schema: DBT_CONTROL
       warehouse: COMPUTE_WH
       threads: 1                  # número de threads para execução paralela
       client_session_keep_alive: false
