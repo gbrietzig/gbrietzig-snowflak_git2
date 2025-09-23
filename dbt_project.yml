@@ -6,11 +6,11 @@ config-version: 2
 profile: default
 
 # Diretórios do projeto
-source-paths: ["models"]
+model-paths: ["models"]
 analysis-paths: ["analysis"]
 test-paths: ["tests"]
 macro-paths: ["macros"]
-data-paths: ["data"]
+seed-paths: ["data"]
 
 # Target padrão
 target-path: "target"
