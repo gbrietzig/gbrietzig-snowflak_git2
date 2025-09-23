@@ -21,6 +21,5 @@ clean-targets:
 models:
   my_dbt_project:
     gold:
-      +schema: GOLD
       +materialized: table
       # materialized: incremental  # Define materialização incremental para todos os modelos na pasta gold
